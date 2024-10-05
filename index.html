@@ -3,42 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DB Jeans - Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            text-align: center; /* Center all text */
         }
 
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #1a1a1a;
+            background-color: #1a1a1a; /* Dark gray for the content background */
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
             border-radius: 8px;
         }
 
         .logo {
-            margin: 0 auto 20px;
-            max-width: 100%;
-            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 100%; /* Ensure the image doesn't overflow */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        h1 {
+            color: #f2f2f2; /* Light text color for headings */
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #ccc; /* Slightly lighter gray for body text */
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #fff; /* White for contact details */
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1877f2; /* Blue color for links */
+            font-size: 1.2em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-links a:hover {
+            color: #0e5ab8; /* Darker blue on hover */
+        }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .line-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .line-links img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px; /* Space between icon and QR */
         }
 
         .line-qr {
             margin-top: 20px;
         }
+
+        /* Make the LINE link white */
+        .line-links a {
+            color: #fff; /* White link color */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .line-links a:hover {
+            color: #ccc; /* Lighter gray on hover */
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #888; /* Light gray for footer text */
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
+        <!-- Logo Section -->
+        <img src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t39.30808-6/462042836_1081272410669339_795504440316401035_n.png?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ZR2wfKX9QB8Q7kNvgGAdwVN&_nc_ht=scontent.fbkk12-3.fna&_nc_gid=AD8LDyCQUwj-vXz23bM1PBo&oh=00_AYBYr_87MybyCAFbA2oZp9PWsxpgClMI1pTu7n1lONxQVw&oe=67077C41" alt="DB Jeans Logo" class="logo">
+
         <h1>DB Jeans</h1>
-        <p>Add me on LINE:</p>
+        <p>Welcome to DB Jeans! Feel free to reach out to us for any inquiries or collaborations.</p>
+        
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Phone: +66 94 891 4942 (Benz)</p>
+        </div>
+
+        <!-- Wholesale Info Section -->
+        <div class="wholesale-info">
+            <p>ขายส่งผ้ายีนส์คุณภาพเยี่ยม</p>
+            <p>จัดส่งทั่วประเทศ รวดเร็ว มั่นใจได้</p>
+            <p>กว่า 30 ปีในวงการ</p>
+            <p>จากบางเมือง, สมุทรปราการ</p>
+
+            <p>Wholesale Denim Fabric – Quality & Value</p>
+            <p>Fast nationwide delivery, reliable service.</p>
+            <p>Over 30 years of experience.</p>
+            <p>From Bang Mueang, Samut Prakan.</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.facebook.com/denimbind" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+                Visit our Facebook
+            </a>
+        </div>
+
+        <!-- LINE Add Friend Section -->
+        <div class="line-links">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE Logo">
+            <span>Add me on LINE:</span>
+        </div>
         <div class="line-qr">
-            <img src="assets/images/line_qr_code.jpeg" alt="LINE QR Code" style="max-width: 200px;">
+            <!-- Embedded QR Code Image -->
+            <img src="assets/images/line_qr_code.jpg" alt="LINE QR Code" style="max-width: 200px;">
+        </div>
+
+        <!-- Clickable link for desktop users -->
+        <div class="line-links">
+            <a href="line://ti/p/benzblahblah" target="_blank">
+                Click here to add me on LINE
+            </a>
         </div>
     </div>
+
+    <footer>
+        &copy; 2024 DB Jeans. All Rights Reserved.
+    </footer>
+
 </body>
 </html>
